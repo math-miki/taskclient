@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import QRCode from 'qrcode.react';
 
 class QrButton extends Component {
   constructor(){
@@ -17,6 +18,7 @@ class QrButton extends Component {
     return (
       <div className="QrButton">
         <button onClick={this.onClick}>{this.state.count}</button>
+        <QRCode  value="aiueo1998" />
       </div>
     );
   }
