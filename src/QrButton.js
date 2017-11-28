@@ -5,20 +5,20 @@ class QrButton extends Component {
   constructor(){
     super();
     this.state = {
-      count: 0
+      qrStr: "aiu"
     }
     this.onClick = this.onClick.bind(this);
   };
   onClick(){
     this.setState({
-      count: this.state.count + 1
+      qrStr: this.state.qrStr += "aiu"
     })
   }
   render() {
     return (
       <div className="QrButton">
-        <button onClick={this.onClick}>{this.state.count}</button>
-        <QRCode  value="aiueo1998" />
+        <button onClick={this.onClick}>refresh QRCode</button>
+        <QRCode  value={this.state.qrStr} />
       </div>
     );
   }
