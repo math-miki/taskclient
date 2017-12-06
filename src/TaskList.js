@@ -10,9 +10,12 @@ class TaskList extends Component {
   }
   render() {
     return (
+      var list = []
+      for(var title in this.state.tasks) {
+        list.push(<TaskNode title={title} />)
+      }
       <div className="taskList">
-        <TaskNode />
-        <TaskNode />
+        {list}
       </div>
     )
   }
