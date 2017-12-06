@@ -6,12 +6,11 @@ class TaskNode extends Component {
     this.state = {
       taskTitle: "眠る"
     }
-    this.
   }
   render() {
     return (
       <div className="taskNode">
-        {this.props.title}
+        <p>{this.props.title}</p>
       </div>
     );
   }

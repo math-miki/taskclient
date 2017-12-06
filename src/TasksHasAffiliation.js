@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TaskNode from './TaskList'
+import TaskList from './TaskList'
 
 class TasksHasAffiliation extends Component {
   constructor() {
@@ -11,11 +11,11 @@ class TasksHasAffiliation extends Component {
   render() {
     var list = []
     if(this.state.tasks.length >1) {
-      for(var task in tasks) {
-        if(task.length>1) {
-        list.push(<TaskList taskTitle={this.state.tasks[0]} tasks={list.slice(1, tasks.length) /})
+      for(var i in this.state.tasks) {
+        if(this.state.tasks[i].length>1) {
+        list.push(<TaskList taskTitle={this.state.tasks[i][0]} tasks={this.state.tasks[i].slice(1, this.state.tasks[i].length)} />)
         } else {
-          list.push(<TaskList taskTitle={this.state.tasks[0]} tasks={[]} /)
+          list.push(<TaskList taskTitle={this.state.tasks[i][0]} tasks={[]} />)
         }
       }
     }
@@ -27,4 +27,4 @@ class TasksHasAffiliation extends Component {
   }
 }
 
-export TasksHasAffiliation
+export default TasksHasAffiliation
