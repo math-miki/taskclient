@@ -1,0 +1,47 @@
+@charset "utf-8";
+@@font-face {
+  font-family: "rounded-mplus-2p-thin"
+  url('../Font/rounded-mplus-2p-thin.ttf') format('truetype');
+
+  font-family: "rounded-mplus-2p-light"
+  url('../Font/rounded-mplus-2p-light.ttf') format('truetype');
+}
+
+h1 {
+  font-family: "rounded-mplus-2p-light";
+  font-weight: 400;
+}
+
+p {
+  font-family: "rounded-mplus-2p-thin";
+}
+
+.tasklistcontent {
+  float: left;
+  margin: 10px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgb(200,200,200);
+
+}
+
+
+.titleoftasklist {
+  text-align: center;
+}
+
+.taskNodeContent {
+}
+
+.clearfix: after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-table;
+}
