@@ -11,11 +11,13 @@ class TasksWithNoAffiliation extends Component {
   render() {
     var list = []
     for(var i in this.state.tasks) {
-      list.push(<TaskNode title={this.state.tasks[i]} />)
+      list.push(<li><TaskNode title={this.state.tasks[i]} /></li>)
     }
     return (
       <div className="tasksWithNoAffiliation">
-        {list}
+        <ul>
+          {list}
+        </ul>
       </div>
     )
   }

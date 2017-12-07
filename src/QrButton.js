@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import QRCode from 'qrcode.react';
+import './style/QRButton.css'
+import './style/Common.css'
 
 class QrButton extends Component {
   constructor(){
@@ -16,9 +18,9 @@ class QrButton extends Component {
   }
   render() {
     return (
-      <div className="QrButton">
-        <button onClick={this.onClick}>refresh QRCode</button>
-        <QRCode  value={this.state.qrStr} />
+      <div className="QrButton clearfix">
+        <button className="qrbutton" onClick={this.onClick}>refresh QRCode</button>
+        <QRCode  value={this.state.qrStr} fgColor={"#AFB42B"} />
       </div>
     );
   }

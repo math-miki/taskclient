@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './style/Common.css'
 
 class TaskNode extends Component {
   constructor() {
@@ -9,7 +10,7 @@ class TaskNode extends Component {
   }
   render() {
     return (
-      <div className="taskNode">
+      <div className="taskNodeContent">
         <p>{this.props.title}</p>
       </div>
     );

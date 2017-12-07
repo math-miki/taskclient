@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TaskNode from './TaskNode'
+import './style/Common.css'
 
 class TaskList extends Component {
   constructor() {
@@ -11,12 +12,12 @@ class TaskList extends Component {
   render() {
     var list = []
     for(var i in this.props.tasks) {
-      list.push(<TaskNode title={this.props.tasks[i]} />)
+      list.push(<li><TaskNode className="nodeInParent" title={this.props.tasks[i]} /></li>)
     }
     return (
-      <div className="taskList">
-        <h1>{this.props.taskTitle}</h1>
-        <div>{list}</div>
+      <div className="tasklistcontent">
+        <h1 calssName="titleoftasklist">{this.props.taskTitle}</h1>
+        <ul>{list}</ul>
       </div>
     )
   }
