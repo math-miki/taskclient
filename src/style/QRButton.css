@@ -1,10 +1,21 @@
 .qrbutton {
+
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin:0px 50px;
-  background-color: rgb(230,238,156);
-  border-color: none;
+  background-color: rgb(220,231,117);
+  border: none;
   float: left;
+}
+
+button.qrbutton:active {
+
+  background-color: rgb(212,225,87);
+}
+
+*:focus {
+
+  outline: none;
 }
