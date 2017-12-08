@@ -1,5 +1,5 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 import './style/index.css';
 import App from './Components/App';
 import QrButton from './Components/QrButton';
@@ -7,9 +7,23 @@ import TaskList from './Components/TaskList'
 import TasksWithNoAffiliation from './Components/TasksWithNoAffiliation'
 import TasksHasAffiliation from './Components/TasksHasAffiliation'
 import registerServiceWorker from './registerServiceWorker';
+import socket from './socket'
+
+class BodyContent extends Component {
+  constructor() {
+    super();
+  }
+  render() {
+    return (
+      <div>
+        <QrButton />
+        <TasksWithNoAffiliation />
+        <TasksHasAffiliation />
+        </div>
+      )
+    }
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<QrButton />, document.getElementById('QRButton'))
-ReactDOM.render(<TasksWithNoAffiliation />, document.getElementById('tasksWithNoAffiliation'))
-ReactDOM.render(<TasksHasAffiliation />, document.getElementById('tasksHasAffiliation'))
+ReactDOM.render(<BodyContent />, document.getElementById('bodyContent'))
 registerServiceWorker();
