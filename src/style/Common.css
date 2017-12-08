@@ -10,6 +10,7 @@
 h1 {
   font-family: "rounded-mplus-2p-light";
   font-weight: 400;
+  font-size: 24px;
 }
 
 p {
@@ -23,6 +24,7 @@ p {
   text-align: center;
   border-radius: 15px;
   background-color: rgb(200,200,200);
+  width: 220px;
 
 }
 
@@ -34,7 +36,7 @@ p {
 }
 
 .clearfix: after {
-  content: ".";
+  content: " ";
   display: block;
   height: 0;
   clear: both;
