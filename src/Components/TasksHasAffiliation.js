@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TaskList from './TaskList'
-import './style/Common.css'
+import './../style/Common.css'
 
 class TasksHasAffiliation extends Component {
   constructor() {

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/index.css';
-import App from './App';
-import QrButton from './QrButton';
-import TaskList from './TaskList'
-import TasksWithNoAffiliation from './TasksWithNoAffiliation'
-import TasksHasAffiliation from './TasksHasAffiliation'
+import App from './Components/App';
+import QrButton from './Components/QrButton';
+import TaskList from './Components/TaskList'
+import TasksWithNoAffiliation from './Components/TasksWithNoAffiliation'
+import TasksHasAffiliation from './Components/TasksHasAffiliation'
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));

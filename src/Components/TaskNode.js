@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style/Common.css'
+import './../style/Common.css'
 
 class TaskNode extends Component {
   constructor() {

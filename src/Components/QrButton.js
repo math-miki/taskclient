@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import QRCode from 'qrcode.react';
-import './style/QRButton.css'
-import './style/Common.css'
+import './../style/QRButton.css'
+import './../style/Common.css'
 
 class QrButton extends Component {
   constructor(){
