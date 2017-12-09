@@ -7,7 +7,7 @@ class QrButton extends Component {
   constructor(){
     super();
     this.state = {
-      qrStr: "aiu"
+      qrStr: "math-miki.Task"
     }
     this.onClick = this.onClick.bind(this);
   };
@@ -19,8 +19,8 @@ class QrButton extends Component {
   render() {
     return (
       <div className="QrButton clearfix">
-        <button className="qrbutton" onClick={this.onClick}>refresh QRCode</button>
-        <QRCode  value={this.state.qrStr} fgColor={"#AFB42B"} />
+        <button className="qrbutton" onClick={this.onClick}>{this.props.codeValue}</button>
+        <QRCode  value={this.props.codeValue} fgColor={/*"#AFB42B"*/"#FFFFFF"} bgColor={"#000000"}/>
       </div>
     );
   }
