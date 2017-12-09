@@ -16,12 +16,12 @@ class TasksHasAffiliation extends Component {
   }
   render() {
     var list = []
-    if(this.state.tasks.length>1) {
-      for(var i in this.state.tasks) {
-        if(this.state.tasks[i].length>1) {
-        list.push(<TaskList className="listwithaffiliation" taskTitle={this.state.tasks[i][0]} tasks={this.state.tasks[i].slice(1, this.state.tasks[i].length)} />)
+    if(this.props.tasks.length>1) {
+      for(var i in this.props.tasks) {
+        if(this.props.tasks[i].length>1) {
+        list.push(<TaskList className="listwithaffiliation" taskTitle={this.props.tasks[i][0]} tasks={this.props.tasks[i].slice(1, this.props.tasks[i].length)} />)
         } else {
-          list.push(<TaskList className="listwithaffiliation" taskTitle={this.state.tasks[i][0]} tasks={[]} />)
+          list.push(<TaskList className="listwithaffiliation" taskTitle={this.props.tasks[i][0]} tasks={[]} />)
         }
       }
     }
